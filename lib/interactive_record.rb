@@ -36,7 +36,7 @@ class InteractiveRecord
     values = []
     self.class.column_names.each do |col_name|
       if col_name != "id"
-        values << "'#{self.col_name}'"
+        values << "'#{send(col_name)}'"
       end 
     end 
     values.join(", ")
