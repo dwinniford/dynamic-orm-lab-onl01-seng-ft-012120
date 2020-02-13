@@ -54,7 +54,7 @@ class InteractiveRecord
       FROM ?
       WHERE name = ? 
     SQL
-    DB[:conn].execute(sql, table_name, "'#{name}'")
+    DB[:conn].execute(sql, self.table_name, "'#{name}'")
   end 
     
     
