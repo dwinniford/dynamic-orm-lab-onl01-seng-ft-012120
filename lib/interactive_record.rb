@@ -52,7 +52,7 @@ class InteractiveRecord
     sql = <<-SQL
       SELECT *
       FROM ?
-      WHERE name = ? 
+      WHERE name = ? ;
     SQL
     DB[:conn].execute(sql, table_name, name)
   end 
