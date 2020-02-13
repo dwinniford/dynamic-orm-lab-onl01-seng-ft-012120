@@ -57,7 +57,7 @@ class InteractiveRecord
     row = []
     hash.each do |k, v|
       sql = "SELECT * FROM #{self.table_name} WHERE ? = ?"
-      row << DB[:conn].execute(sql, k.to_s, v)
+      row << DB[:conn].execute(sql, k, v)
     end 
    row 
   end
