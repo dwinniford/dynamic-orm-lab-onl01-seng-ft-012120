@@ -21,5 +21,5 @@ class InteractiveRecord
   # def save 
   # end 
   
-  def 
+  
 end
