@@ -18,8 +18,8 @@ class InteractiveRecord
     column_names.compact
   end 
   
-  def save 
-  end 
+  # def save 
+  # end 
   
   def 
 end
